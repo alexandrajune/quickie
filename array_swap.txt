@@ -1,0 +1,15 @@
+/**
+How to swap array key-value pairs.
+input parameters: array a and size n
+sample input: a[0]=3; a[1]=0; a[2]=1; a[3]=2;
+output: a[0]=1; a[1]=2; a[2]=3; a[3]=0;
+*/
+
+int k=0, v=a[k], t= 0;
+for(int i=0;i<n;i++)
+{
+  t= a[v];
+  a[v] = k;
+  k= v;
+  v= t;
+}
